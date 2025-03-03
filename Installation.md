@@ -7,7 +7,7 @@
         git clone https://github.com/JoaquiinAguilar/API-REST-PERSONAS.git
     ```
 2. Access into the folder 
-    `cd `
+    `cd personas_proyecto`
 3. Create an virtual environment 
     `python3 -m venv .env`
 4. Activate the virtual environment 
