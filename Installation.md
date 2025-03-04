@@ -26,4 +26,4 @@
 9. Execute python project
     `python manage.py runserver`
 10. Go to the explorer and navigate to `http://127.0.0.1:8000/`
-11. Read the instructions, make your solution and **Good look!**
+11. Ready to go!
