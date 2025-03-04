@@ -11,13 +11,18 @@
 3. Create an virtual environment 
     `python3 -m venv .env`
 4. Activate the virtual environment 
+    If you're using MacOs, Linux or any UNIX environment this command will work
     `source .env/bin/activate`
+
+    If you are in a Windows Machine This command is necessary to make it work
+    `.env\Scripts\Activate`
 5. Update pip to latests version
     `pip install --upgrade pip`
 6. Install libraries
     `pip install -r requirements.txt --no-cache`
 7. Create file .env inside **** folder, copy the content from **.env.example** and change the database connection values
-8. Run migrations: `python manage.py migrate`
+8. Run migrations: `python manage.py makemigrations`
+                   `python manage.py migrate`
 9. Execute python project
     `python manage.py runserver 8090`
 10. Go to the explorer and navigate to `http://localhost:8080`
