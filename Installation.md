@@ -15,7 +15,7 @@
     `source .env/bin/activate`
 
     If you are in a Windows Machine This command is necessary to make it work
-    `.env\Scripts\Activate`
+    `.env\Scripts\Activate.bat`
 5. Update pip to latests version
     `pip install --upgrade pip`
 6. Install libraries
@@ -25,5 +25,5 @@
                    `python manage.py migrate`
 9. Execute python project
     `python manage.py runserver`
-10. Go to the explorer and navigate to `http://localhost:8080`
+10. Go to the explorer and navigate to `http://127.0.0.1:8000/`
 11. Read the instructions, make your solution and **Good look!**
