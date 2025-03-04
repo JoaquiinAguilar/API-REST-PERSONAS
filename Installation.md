@@ -9,7 +9,7 @@
 2. Access into the folder 
     `cd personas_proyecto`
 3. Create an virtual environment 
-    `python3 -m venv .env`
+    `python -m venv .env`
 4. Activate the virtual environment 
     If you're using MacOs, Linux or any UNIX environment this command will work
     `source .env/bin/activate`
