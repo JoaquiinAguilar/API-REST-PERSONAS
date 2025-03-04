@@ -1,6 +1,6 @@
 ## Steps to run project with the traditional method
 
-# este es un ejemplo ir complentando
+# este es un ejemplo, ir complementando
 
 1. Clone the repo
     ```sh
