@@ -24,6 +24,6 @@
 8. Run migrations: `python manage.py makemigrations`
                    `python manage.py migrate`
 9. Execute python project
-    `python manage.py runserver 8090`
+    `python manage.py runserver`
 10. Go to the explorer and navigate to `http://localhost:8080`
 11. Read the instructions, make your solution and **Good look!**
