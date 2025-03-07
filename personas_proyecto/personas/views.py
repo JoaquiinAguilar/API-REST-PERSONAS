@@ -10,3 +10,8 @@ class PersonViewSet(viewsets.ModelViewSet):
     serializer_class = PersonSerializer
     filter_backends = [filters.SearchFilter]
     search_fields = ['name', 'category']
+
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'personas/index.html')
