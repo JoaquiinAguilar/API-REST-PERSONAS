@@ -11,7 +11,7 @@
         <h1 class="text-center">Buscar Usuarios</h1>
         
         <div class="mb-3">
-            <input type="text" id="searchInput" class="form-control" placeholder="Buscar por nombre o categoría">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar por nombre o apellido">
         </div>
         
         <button class="btn btn-primary" onclick="buscarPersonas()">Buscar</button>
@@ -20,7 +20,11 @@
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Categoría</th>
+                    <th>Apellido</th>
+                    <th>Sexo</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Rol</th>
                     <th>Foto</th>
                 </tr>
             </thead>
@@ -48,8 +52,12 @@
                 resultsTable.innerHTML += `
                     <tr>
                         <td>${person.name}</td>
-                        <td>${person.category}</td>
-                        <td><img src="${person.photo}" width="50"></td>
+                        <td>${person.last_name}</td>
+                        <td>${person.gender === 'M' ? 'Masculino' : 'Femenino'}</td>
+                        <td>${person.phone_number}</td>
+                        <td>${person.email}</td>
+                        <td>${person.role}</td>
+                        <td><img src="${person.photo}" width="50" alt="Foto de perfil"></td>
                     </tr>`;
             });
         }
