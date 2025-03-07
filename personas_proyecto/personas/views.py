@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets, filters
+from rest_framework.permissions import IsAdminUser
+
 from .models import Person
 from .serializers import PersonSerializer
 
@@ -8,7 +10,9 @@ from .serializers import PersonSerializer
 class PersonViewSet(viewsets.ModelViewSet):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
+    permission_classes = [IsAdminUser]
     filter_backends = [filters.SearchFilter]
+
     search_fields = ['name', 'category']
 
 from django.shortcuts import render
