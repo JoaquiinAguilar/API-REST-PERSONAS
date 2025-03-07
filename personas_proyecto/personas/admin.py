@@ -8,6 +8,6 @@ class PersonAdmin(admin.ModelAdmin):
             'fields': ['name', 'last_name', 'birth_date']
         }),
         ("Detalles adicionales", {
-            'fields': ['email', 'role', 'photo']
+            'fields': ['phone_number','email', 'role', 'photo', 'biometric_fingerprint']
         }),
     ]
